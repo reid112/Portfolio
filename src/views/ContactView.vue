@@ -1,7 +1,7 @@
 <template>
   <div
-    id="about"
-    class="bg-pink-300"
+    id="contact"
+    class="bg-orange-300"
   >
     <p>About View</p>
   </div>

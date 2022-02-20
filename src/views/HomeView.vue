@@ -1,5 +1,8 @@
 <template>
-    <main>
-        <p>Home View</p>
-    </main>
+  <div
+    id="home"
+    class="h-full bg-gray-300"
+  >
+    <p>Home View</p>
+  </div>
 </template>

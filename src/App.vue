@@ -1,19 +1,24 @@
 <script setup>
-import { RouterView } from 'vue-router'
+import LayoutHeader from "@/components/LayoutHeader.vue"
+import LayoutFooter from "@/components/LayoutFooter.vue"
+import HomeView from "./views/HomeView.vue"
+import AboutView from "./views/AboutView.vue"
+import ResumeView from "./views/ResumeView.vue"
+import PortfolioView from "./views/PortfolioView.vue"
+import ContactView from "./views/ContactView.vue"
 </script>
 
 <template>
-    <header>
-        <nav>
-            <p class="text-3xl text-blue-500">Navigation will go here</p>
-        </nav>
-    </header>
+  <div class="flex flex-col h-screen font-primary">
+    <LayoutHeader />
 
-    <main>
-        <RouterView />
+    <main class="flex-grow overflow-y-scroll md:ml-80 scroll-smooth">
+      <HomeView />
+      <AboutView />
+      <ResumeView />
+      <PortfolioView />
+      <ContactView />
+      <LayoutFooter />
     </main>
-
-    <footer>
-        <p>Footer will go here</p>
-    </footer>
+  </div>
 </template>
