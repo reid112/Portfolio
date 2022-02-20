@@ -12,7 +12,7 @@ import ContactView from "./views/ContactView.vue"
   <div class="flex flex-col h-screen font-primary">
     <LayoutHeader />
 
-    <main class="flex-grow overflow-y-scroll md:ml-80 scroll-smooth">
+    <main class="flex-grow overflow-y-scroll md:ml-60 xl:ml-80 scroll-smooth">
       <HomeView />
       <AboutView />
       <ResumeView />

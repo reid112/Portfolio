@@ -12,7 +12,7 @@ function toggleNavigation() {
 </script>
 
 <template>
-  <header class="sticky top-0 left-0 z-50 h-16 px-4 text-gray-200 bg-gray-700 md:h-screen md:w-40 md:fixed">
+  <header class="sticky top-0 left-0 z-50 h-16 px-4 text-gray-200 bg-zinc-900 md:h-screen md:w-60 xl:w-80 md:fixed">
     <!-- Mobile Header -->
     <div class="flex items-center justify-between h-full md:hidden">
       <h2 class="text-xl font-bold tracking-wider">
@@ -43,7 +43,7 @@ function toggleNavigation() {
     </div>
 
     <nav
-      class="fixed top-0 bottom-0 flex flex-col items-center justify-between w-full py-10 mt-16 transition-all duration-300 bg-gray-700 md:mt-0 md:left-0 md:w-80"
+      class="fixed top-0 bottom-0 flex flex-col items-center justify-between w-full py-10 mt-16 transition-all duration-300 bg-zinc-900 md:mt-0 md:left-0 md:w-60 xl:w-80"
       :class="navigationVisible ? 'left-0' : '-left-full'"
     >
       <!-- Image/Name -->
@@ -63,7 +63,7 @@ function toggleNavigation() {
         <ul class="text-lg tracking-wider text-center">
           <li>
             <a
-              class="block py-2"
+              class="block py-2 hover:text-blue-400"
               href="#home"
             >
               Home
@@ -71,7 +71,7 @@ function toggleNavigation() {
           </li>
           <li>
             <a
-              class="block py-2"
+              class="block py-2 hover:text-blue-400"
               href="#about"
             >
               About Me
@@ -79,7 +79,7 @@ function toggleNavigation() {
           </li>
           <li>
             <a
-              class="block py-2"
+              class="block py-2 hover:text-blue-400"
               href="#resume"
             >
               Resume
@@ -87,7 +87,7 @@ function toggleNavigation() {
           </li>
           <li>
             <a
-              class="block py-2"
+              class="block py-2 hover:text-blue-400"
               href="#portfolio"
             >
               Portfolio
@@ -95,7 +95,7 @@ function toggleNavigation() {
           </li>
           <li>
             <a
-              class="block py-2"
+              class="block py-2 hover:text-blue-400"
               href="#contact"
             >
               Contact
