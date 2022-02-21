@@ -1,8 +1,5 @@
 <template>
-  <section
-    id="home"
-    class="w-full h-full"
-  >
+  <section class="w-full h-full">
     <div class="z-10 flex flex-col items-center justify-center w-full h-full text-center text-gray-200">
       <p class="text-2xl font-bold lg:text-4xl">
         Hello

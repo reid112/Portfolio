@@ -79,10 +79,7 @@ const skills = [
 </script>
 
 <template>
-  <section
-    id="resume"
-    class="px-4 pb-24 bg-zinc-100"
-  >
+  <section class="px-4 pb-24 bg-zinc-100">
     <div class="container mx-auto">
       <PageTitle
         background-title="Summary"

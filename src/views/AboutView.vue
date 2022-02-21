@@ -18,10 +18,7 @@ const currentAge = computed(() => {
 </script>
 
 <template>
-  <section
-    id="about"
-    class="px-4 pb-24 bg-white "
-  >
+  <section class="px-4 pb-24 bg-white">
     <div class="container mx-auto">
       <PageTitle
         background-title="About Me"

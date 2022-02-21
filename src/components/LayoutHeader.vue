@@ -6,6 +6,13 @@ import { ref } from 'vue'
 
 const navigationVisible = ref(false)
 
+defineProps({
+  activeLink: {
+    type: String,
+    required: true,
+  },
+})
+
 function toggleNavigation() {
   navigationVisible.value = !navigationVisible.value
 }
@@ -69,6 +76,7 @@ function toggleNavigation() {
           <li>
             <a
               class="block py-2 hover:text-blue-400"
+              :class="activeLink === 'home' ? 'text-blue-400' : ''"
               href="#home"
             >
               Home
@@ -77,6 +85,7 @@ function toggleNavigation() {
           <li>
             <a
               class="block py-2 hover:text-blue-400"
+              :class="activeLink === 'about' ? 'text-blue-400' : ''"
               href="#about"
             >
               About Me
@@ -85,6 +94,7 @@ function toggleNavigation() {
           <li>
             <a
               class="block py-2 hover:text-blue-400"
+              :class="activeLink === 'resume' ? 'text-blue-400' : ''"
               href="#resume"
             >
               Resume
@@ -93,6 +103,7 @@ function toggleNavigation() {
           <li>
             <a
               class="block py-2 hover:text-blue-400"
+              :class="activeLink === 'portfolio' ? 'text-blue-400' : ''"
               href="#portfolio"
             >
               Portfolio
@@ -101,6 +112,7 @@ function toggleNavigation() {
           <li>
             <a
               class="block py-2 hover:text-blue-400"
+              :class="activeLink === 'contact' ? 'text-blue-400' : ''"
               href="#contact"
             >
               Contact

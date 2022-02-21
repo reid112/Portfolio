@@ -14,10 +14,7 @@ function submit() {
 </script>
 
 <template>
-  <section
-    id="contact"
-    class="px-4 pb-24 bg-zinc-100"
-  >
+  <section class="px-4 pb-24 bg-zinc-100">
     <div class="container mx-auto">
       <PageTitle
         background-title="Contact"

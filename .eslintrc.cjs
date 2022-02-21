@@ -6,6 +6,14 @@ module.exports = {
   extends: ["plugin:vue/vue3-strongly-recommended", "eslint:recommended"],
   rules: {
     "semi": [1, "never"],
+    "vue/max-attributes-per-line": ["error", {
+      "singleline": {
+        "max": 5
+      },      
+      "multiline": {
+        "max": 5
+      }
+    }]
   },
   env: {
     "vue/setup-compiler-macros": true,
