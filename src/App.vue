@@ -17,7 +17,6 @@ const portfolio = ref(null)
 const contact = ref(null)
 
 const observer = new IntersectionObserver((entries) => {
-  console.log(entries[0].target.id + ' : ' + entries[0].isIntersecting)
 	if(entries[0].isIntersecting === true)
 		activeLink.value = entries[0].target.id
 }, { threshold: [0.1] })

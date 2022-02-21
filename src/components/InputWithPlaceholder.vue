@@ -1,6 +1,6 @@
 <script setup>
-defineProps({
-  value: {
+const props = defineProps({
+  modelValue: {
     type: String,
     required: true,
   },
@@ -24,13 +24,10 @@ defineProps({
   },
 })
 
-defineEmits(['input', 'change'])
+const emit = defineEmits(['update:modelValue'])
 
-function onInput(e) {
-  this.$emit('input', e.target.value)
-}
-function onChange(e) {
-  this.$emit('change', e.target.value)
+function updateValue(value) {
+  emit('update:modelValue', value)
 }
 </script>
 
@@ -42,9 +39,8 @@ function onChange(e) {
       :type="inputType"
       :placeholder="placeholder"
       :required="isRequired"
-      :value="value"
-      @input="onInput"
-      @change="onChange"
+      :value="props.modelValue"
+      @input="updateValue($event.target.value)"
       class="w-full h-10 text-gray-900 placeholder-transparent bg-transparent border-0 border-b-2 border-gray-300 peer focus:outline-none focus:ring-0 focus:border-blue-400"
     >
     <label
