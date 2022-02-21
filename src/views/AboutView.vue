@@ -18,7 +18,7 @@ const currentAge = computed(() => {
 </script>
 
 <template>
-  <div
+  <section
     id="about"
     class="px-4 pb-24 bg-white "
   >
@@ -64,5 +64,5 @@ const currentAge = computed(() => {
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>

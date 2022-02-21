@@ -1,5 +1,5 @@
 <template>
-  <div
+  <section
     id="home"
     class="w-full h-full"
   >
@@ -13,9 +13,12 @@
       <p class="mt-4 text-2xl">
         based in Regina, Saskatchewan.
       </p>
-      <button class="px-6 py-2 mt-8 overflow-hidden border-2 border-blue-400 rounded-full hover:bg-blue-300 hover:text-gray-700">
+      <a
+        class="mt-8 btn btn-outline" 
+        href="#contact"
+      >
         Contact Me
-      </button>
+      </a>
     </div>
 
     <div class="absolute inset-0 z-0 w-full h-full">
@@ -25,5 +28,5 @@
       >
       <div class="absolute inset-0 bg-black bg-opacity-80" />
     </div>
-  </div>
+  </section>
 </template>

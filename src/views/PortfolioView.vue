@@ -1,8 +1,18 @@
+<script setup>
+import PageTitle from '@/components/PageTitle.vue'
+</script>
+
 <template>
-  <div
+  <section
     id="portfolio"
-    class="bg-indigo-300"
+    class="px-4 pb-24 bg-white"
   >
-    <p>Portfolio View</p>
-  </div>
+    <div class="container mx-auto">
+      <PageTitle
+        background-title="Portfolio"
+        foreground-title="My Work"
+      />
+    
+    </div>
+  </section>
 </template>

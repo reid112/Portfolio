@@ -79,7 +79,7 @@ const skills = [
 </script>
 
 <template>
-  <div
+  <section
     id="resume"
     class="px-4 pb-24 bg-zinc-100"
   >
@@ -133,5 +133,5 @@ const skills = [
         <DownloadResumeButton />
       </div>
     </div>
-  </div>
+  </section>
 </template>
