@@ -7,27 +7,39 @@ import emailjs from '@emailjs/browser'
 const name = ref('')
 const email = ref('')
 const message = ref('')
+const messageSent = ref(false)
+const messageError = ref(false)
 
 onMounted(() => {
   emailjs.init(import.meta.env.VITE_EMAIL_JS_USER_ID)
 })
 
 function submit() {
+  clearMessageBanner()
+  
   emailjs.send(
     import.meta.env.VITE_EMAIL_JS_SERVICE_ID,
     import.meta.env.VITE_EMAIL_JS_CONTACT_TEMPLATE_ID,
     { name: name.value, email: email.value, message: message.value },
     import.meta.env.VITE_EMAIL_JS_USER_ID
-  ).then((response) => {
-      console.log(response)
-    })
-    .catch((error) => {
-      console.log(error)
-    })
-
+  ).then(() => {
     name.value = ''
     email.value = ''
     message.value = ''
+
+    messageSent.value = true
+    setTimeout(clearMessageBanner, 5000)
+  })
+  .catch(() => {
+    setTimeout(clearMessageBanner, 5000)
+  })
+
+    
+}
+
+function clearMessageBanner() {
+  messageSent.value = false
+  messageError.value = false
 }
 </script>
 
@@ -65,6 +77,12 @@ function submit() {
             placeholder="Tell us more..."
             :is-required="true"
           />
+          <div v-if="messageSent">
+            <span class="px-24 py-1 font-bold bg-green-400 rounded">Message Sent!</span>
+          </div>
+          <div v-else-if="messageError">
+            <span class="px-24 py-1 font-bold bg-red-400 rounded text-zinc-100">Oops, something went wrong.</span> 
+          </div>
           <button
             class="btn btn-primary"
             type="submit"
