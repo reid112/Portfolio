@@ -33,8 +33,6 @@ function submit() {
   .catch(() => {
     setTimeout(clearMessageBanner, 5000)
   })
-
-    
 }
 
 function clearMessageBanner() {
