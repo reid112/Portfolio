@@ -12,29 +12,31 @@ function toggleNavigation() {
 </script>
 
 <template>
-  <header class="sticky top-0 left-0 z-50 h-16 px-4 text-gray-200 bg-zinc-900 md:h-screen md:w-60 xl:w-80 md:fixed">
+  <header class="sticky top-0 left-0 z-50 px-4 text-gray-200 bg-zinc-900 md:h-screen md:w-60 xl:w-80 md:fixed">
     <!-- Mobile Header -->
-    <div class="flex items-center justify-between h-full md:hidden">
+    <div class="flex items-center justify-between h-16 md:hidden">
       <h2 class="text-xl font-bold tracking-wider">
         Riley Reid
       </h2>
       <div class="flex items-center">
         <a
-          class="ml-4"
+          class="ml-4 hover:text-blue-400"
+          title="Github"
           href="https://github.com/reid112"
           target="_blank"
         >
           <IconGithub class="w-4 h-4" />
         </a>
         <a
-          class="ml-4"
+          class="ml-4 hover:text-blue-400"
+          title="LinkedIn"
           href="https://www.linkedin.com/in/riley-reid-89784b66/"
           target="_blank"
         >
           <IconLinkedin class="w-4 h-4" />
         </a>
         <div
-          class="ml-12"
+          class="ml-12 cursor-pointer"
           @click="toggleNavigation"
         >
           <IconMenu class="w-6 h-6" />
@@ -60,7 +62,10 @@ function toggleNavigation() {
 
       <!-- Links -->
       <div class="w-full">
-        <ul class="text-lg tracking-wider text-center">
+        <ul
+          class="text-lg tracking-wider text-center"
+          @click="toggleNavigation"
+        >
           <li>
             <a
               class="block py-2 hover:text-blue-400"
@@ -105,16 +110,20 @@ function toggleNavigation() {
       </div>
 
       <!-- Socials -->
-      <div class="justify-center hidden h-6 space-x-8 text-white md:flex">
+      <div class="justify-center hidden h-6 space-x-8 md:flex">
         <a
+          class="text-white hover:text-blue-400"
           href="https://github.com/reid112"
+          title="Github"
           target="_blank"
         >
           <IconGithub />
         </a>
         <a
+          class="text-white hover:text-blue-400"
           href="https://www.linkedin.com/in/riley-reid-89784b66/"
           target="_blank"
+          title="LinkedIn"
         >
           <IconLinkedin />
         </a>
