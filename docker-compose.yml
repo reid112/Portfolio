@@ -1,0 +1,16 @@
+version: '3'
+
+networks:
+  portfolio_app:
+    external: true
+
+services:
+  portfolio:
+    container_name: portfolio_web
+    image: portfolio:latest
+    ports:
+      - "8082:80"
+    env_file:
+      - .env
+    networks:
+      - portfolio_app
