@@ -1,14 +1,11 @@
 # Portfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+This is the code for my personal portfolio website that can be found at rjreid.ca.
+This web app is build using Vue 3 and Vite.
 
 ## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur).
 
 ## Project Setup
 
@@ -32,4 +29,15 @@ npm run build
 
 ```sh
 npm run lint
+```
+
+### Production Release
+#### Build Docker Image
+```sh
+docker build -t portfolio .
+```
+
+#### Spin Up Container
+```sh
+docker-compose up
 ```
