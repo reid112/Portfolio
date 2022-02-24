@@ -1,5 +1,5 @@
 <template>
-  <button class="btn btn-primary">
+  <a class="btn btn-primary" href="../../public/Resume.pdf" download="riley-reid-resume">
     Download Resume
-  </button>
+  </a>
 </template>
