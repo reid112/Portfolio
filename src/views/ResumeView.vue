@@ -7,14 +7,14 @@ import { education, experience, skills } from '@/helpers/data.js'
 </script>
 
 <template>
-  <section class="px-4 pb-24 bg-zinc-100">
+  <section class="px-4 pb-24 bg-zinc-100 dark:bg-zinc-800">
     <div class="container mx-auto">
       <PageTitle
         background-title="Summary"
         foreground-title="Resume"
       />
 
-      <h2 class="text-2xl font-bold text-zinc-800">
+      <h2 class="text-2xl font-bold text-zinc-800 dark:text-zinc-100">
         My Education
       </h2>
       <div class="grid grid-cols-1 gap-4 mt-4 lg:grid-cols-2">
@@ -28,7 +28,7 @@ import { education, experience, skills } from '@/helpers/data.js'
         />
       </div>
 
-      <h2 class="mt-12 text-2xl font-bold text-zinc-800">
+      <h2 class="mt-12 text-2xl font-bold text-zinc-800 dark:text-zinc-100">
         My Experience
       </h2>
       <div class="grid grid-cols-1 gap-4 mt-4 lg:grid-cols-2">
@@ -42,7 +42,7 @@ import { education, experience, skills } from '@/helpers/data.js'
         />
       </div>
 
-      <h2 class="mt-12 text-2xl font-bold text-zinc-800">
+      <h2 class="mt-12 text-2xl font-bold text-zinc-800 dark:text-zinc-100">
         My Skills
       </h2>
       <div class="grid grid-cols-1 gap-4 mt-4 lg:grid-cols-2">

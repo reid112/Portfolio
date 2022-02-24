@@ -15,12 +15,12 @@ defineProps({
   <div class="relative py-20">
     <div class="relative flex items-center justify-center w-full">
       <div class="absolute flex items-center justify-center">
-        <span class="text-6xl font-bold tracking-widest text-gray-200 uppercase opacity-70">
+        <span class="text-4xl font-bold tracking-widest text-gray-200 uppercase md:text-5xl lg:text-6xl dark:text-zinc-600 opacity-70">
           {{ backgroundTitle }}
         </span>
         <span class="absolute bottom-0 w-24 h-1 bg-blue-400 rounded-full" />
       </div>
-      <div class="text-3xl font-extrabold">
+      <div class="text-2xl font-extrabold lg:text-3xl text-zinc-800 dark:text-zinc-100">
         {{ foregroundTitle }}
       </div>
     </div>

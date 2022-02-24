@@ -5,7 +5,7 @@ import { projects } from '@/helpers/data.js'
 </script>
 
 <template>
-  <section class="px-4 pb-24 bg-white">
+  <section class="px-4 pb-24 bg-white dark:bg-zinc-700">
     <div class="container mx-auto">
       <PageTitle
         background-title="Portfolio"

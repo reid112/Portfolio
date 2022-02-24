@@ -18,14 +18,14 @@ const currentAge = computed(() => {
 </script>
 
 <template>
-  <section class="px-4 pb-24 bg-white">
+  <section class="px-4 pb-24 bg-white dark:bg-zinc-700">
     <div class="container mx-auto">
       <PageTitle
         background-title="About Me"
         foreground-title="Get To Know Me"
       />
       <div class="lg:flex">
-        <div class="space-y-4 text-base text-center text-zinc-800 lg:w-4/6 lg:px-8">
+        <div class="space-y-4 text-base text-center text-zinc-800 dark:text-zinc-100 lg:w-4/6 lg:px-8">
           <h2 class="text-2xl font-bold ">
             I'm <span class="font-bold text-blue-400">Riley Reid,</span> a Canadian Developer
           </h2>
@@ -41,7 +41,7 @@ const currentAge = computed(() => {
           </p>
         </div>
         <div class="lg:w-2/6 lg:px-8">
-          <div class="mt-16 text-base divide-y lg:mt-0 text-zinc-800">
+          <div class="mt-16 text-base divide-y lg:mt-0 text-zinc-800 dark:text-zinc-100">
             <p class="py-2">
               <span class="mr-2 font-bold">Name:</span> Riley Reid
             </p>
