@@ -1,7 +1,7 @@
 # Portfolio
 
-This is the code for my personal portfolio website that can be found at rjreid.ca.
-This web app is build using Vue 3 and Vite.
+This is the code for my personal portfolio website that can be found at https://rjreid.ca.
+This web app is build using Vue 3, Vite, and Tailwind.
 
 ## Recommended IDE Setup
 
