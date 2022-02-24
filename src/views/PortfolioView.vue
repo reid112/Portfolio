@@ -11,12 +11,11 @@ import { projects } from '@/helpers/data.js'
         background-title="Portfolio"
         foreground-title="My Work"
       />
-      <div class="grid grid-cols-1 gap-4 mt-4 md:grid-cols-2 lg:grid-cols-3">
+      <div class="flex flex-wrap items-center mt-4">
         <PortfolioCard
           v-for="project in projects"
           :key="project.title"
           :title="project.title"
-          :description="project.description"
           :image-name="project.imageName"
           :link="project.link"
           :type="project.type"
