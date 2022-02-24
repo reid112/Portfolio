@@ -10,7 +10,7 @@ const props = defineProps({
     type: String,
     required: true,
   },
-  imageUrl: {
+  imageName: {
     type: String,
     required: true,
   },
@@ -42,7 +42,7 @@ const projectTypeClass = computed(() => {
     :alt="props.title"
     target="_blank"
     class="block max-w-sm mx-auto duration-500 transform bg-center bg-cover shadow-xl cursor-pointer min-h-150 hover:-translate-y-2 group"
-    :style="{ backgroundImage: 'url(' + imageUrl + ')' }"
+    :style="{ backgroundImage: 'url(../../' + imageName + ')' }"
   >
     <div class="flex flex-col flex-wrap h-full px-10 duration-300 transform bg-black bg-opacity-40 pt-96 hover:bg-opacity-75">
       <h1 class="mb-5 text-3xl text-white duration-300 transform translate-y-20 group-hover:translate-y-0">

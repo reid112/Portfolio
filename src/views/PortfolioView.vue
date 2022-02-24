@@ -17,7 +17,7 @@ import { projects } from '@/helpers/data.js'
           :key="project.title"
           :title="project.title"
           :description="project.description"
-          :image-url="project.imageUrl"
+          :image-name="project.imageName"
           :link="project.link"
           :type="project.type"
         />
