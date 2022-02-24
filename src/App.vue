@@ -34,7 +34,7 @@ onMounted(() => {
   <div class="flex flex-col h-screen font-primary">
     <LayoutHeader :active-link="activeLink" />
 
-    <main class="flex-grow overflow-y-scroll md:ml-60 xl:ml-80 scroll-smooth">
+    <main class="flex-grow overflow-y-scroll lg:ml-60 xl:ml-80 scroll-smooth">
       <div id="home" ref="home" class="w-full h-full">
         <HomeView />
       </div>
