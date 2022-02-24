@@ -1,42 +1,42 @@
 export const education = [
   {
-    time: '2009 - 2012',
-    title: 'Bachelor Degree',
+    time: '2010 - 2015',
+    title: 'Bachelor of Science, Computer Science',
     location: 'University of Regina',
-    description: 'Graduated with a degree in Computed Science.  Also took the coop program which allowed me to get real life work experience while going to school.'
+    description: 'Graduated with a degree in Computed Science.'
   },
   {
-    time: '2009 - 2012',
-    title: 'Bachelor Degree',
+    time: '2011 - 2015',
+    title: 'Computer Science Co-op Program',
     location: 'University of Regina',
-    description: 'Graduated with a degree in Computed Science.  Also took the coop program which allowed me to get real life work experience while going to school.'
+    description: 'While doing my undergrad, I participated in the Co-op program.  I completed work terms at TRLabs, SaskEnergy, RCMP, and GasBuddy.'
   },
-  {
-    time: '2009 - 2012',
-    title: 'Bachelor Degree',
-    location: 'University of Regina',
-    description: 'Graduated with a degree in Computed Science.  Also took the coop program which allowed me to get real life work experience while going to school.'
-  },
-  {
-    time: '2009 - 2012',
-    title: 'Bachelor Degree',
-    location: 'University of Regina',
-    description: 'Graduated with a degree in Computed Science.  Also took the coop program which allowed me to get real life work experience while going to school.'
-  }
 ]
 
 export const experience = [
   {
-    time: '2012 - current',
-    title: 'Web Developer',
-    location: 'GasBuddy',
-    description: 'Some text here about what I did in this role.'
+    time: 'April 2020 - Present',
+    title: 'Senior Software Engineer',
+    location: 'Lumeca Health',
+    description: 'Currently, I work at Lumeca on the Android app, the web app, and the server code.  I work with Kotlin (Android and KTOR), Javascript (Vue.js), PHP (Laravel), and C# (.NET).'
   },
   {
-    time: '2012 - current',
+    time: 'June 2019 - April 2020',
+    title: 'Senior Android Engineer',
+    location: 'Trov',
+    description: 'Joined Trov as a remote developer. I worked as a part of the Android team to build a telematics app for a client out of Austrailia.'
+  },
+  {
+    time: 'Dec 2015 - June 2019',
+    title: 'Principal Android Engineer',
+    location: 'GasBuddy',
+    description: 'After expressing interest in mobile development, I moved from the web team to the Android team.  I started knowing nothing about mobile development and eventually was promoted to Team Lead in 2019.'
+  },
+  {
+    time: 'Jan 2013 - Dec 2015',
     title: 'Web Developer',
     location: 'GasBuddy',
-    description: 'Some text here about what I did in this role.'
+    description: 'Joined the GasBuddy web team while in University as part of the co-op program.  Stayed on part time after my 4 month work term was up and then went to full time after I graduated.'
   }
 ]
 
@@ -58,7 +58,7 @@ export const skills = [
     value: '80'
   },
   {
-    title: 'Vue JS',
+    title: 'Vue.js',
     value: '80'
   },
   {
@@ -68,6 +68,14 @@ export const skills = [
   {
     title: 'Docker',
     value: '65'
+  },
+  {
+    title: 'PHP',
+    value: '75'
+  },
+  {
+    title: 'Laravel',
+    value: '75'
   }
 ]
 
