@@ -14,10 +14,10 @@ defineProps({
 <template>
   <div>
     <div class="flex items-center justify-between">
-      <p class="font-bold">
+      <p class="font-bold text-zinc-800 dark:text-zinc-100">
         {{ title }}
       </p>
-      <p class="font-bold">
+      <p class="font-bold text-zinc-800 dark:text-zinc-100">
         {{ value }}%
       </p>
     </div>

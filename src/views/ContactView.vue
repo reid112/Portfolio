@@ -42,7 +42,7 @@ function clearMessageBanner() {
 </script>
 
 <template>
-  <section class="px-4 pb-24 bg-zinc-100">
+  <section class="px-4 pb-24 bg-zinc-100 dark:bg-zinc-800">
     <div class="container mx-auto">
       <PageTitle
         background-title="Contact"

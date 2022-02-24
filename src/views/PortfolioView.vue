@@ -5,19 +5,18 @@ import { projects } from '@/helpers/data.js'
 </script>
 
 <template>
-  <section class="px-4 pb-24 bg-white">
+  <section class="px-4 pb-24 bg-white dark:bg-zinc-700">
     <div class="container mx-auto">
       <PageTitle
         background-title="Portfolio"
         foreground-title="My Work"
       />
-      <div class="grid grid-cols-1 gap-4 mt-4 md:grid-cols-2 lg:grid-cols-3">
+      <div class="flex flex-wrap items-center mt-4">
         <PortfolioCard
           v-for="project in projects"
           :key="project.title"
           :title="project.title"
-          :description="project.description"
-          :image-url="project.imageUrl"
+          :image-name="project.imageName"
           :link="project.link"
           :type="project.type"
         />
