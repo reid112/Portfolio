@@ -19,9 +19,9 @@ function toggleNavigation() {
 </script>
 
 <template>
-  <header class="sticky top-0 left-0 z-50 px-4 text-gray-200 bg-zinc-900 md:h-screen md:w-60 xl:w-80 md:fixed">
+  <header class="sticky top-0 left-0 z-50 px-4 text-gray-200 bg-zinc-900 lg:h-screen lg:w-60 xl:w-80 lg:fixed">
     <!-- Mobile Header -->
-    <div class="flex items-center justify-between h-16 md:hidden">
+    <div class="flex items-center justify-between h-16 lg:hidden">
       <h2 class="text-xl font-bold tracking-wider">
         Riley Reid
       </h2>
@@ -52,7 +52,7 @@ function toggleNavigation() {
     </div>
 
     <nav
-      class="fixed top-0 bottom-0 flex flex-col items-center justify-between w-full py-10 mt-16 transition-all duration-300 bg-zinc-900 md:mt-0 md:left-0 md:w-60 xl:w-80"
+      class="fixed top-0 bottom-0 flex flex-col items-center justify-between w-full py-10 mt-16 transition-all duration-300 bg-zinc-900 lg:mt-0 lg:left-0 lg:w-60 xl:w-80"
       :class="navigationVisible ? 'left-0' : '-left-full'"
     >
       <!-- Image/Name -->
