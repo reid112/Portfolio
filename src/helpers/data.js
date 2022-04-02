@@ -88,6 +88,13 @@ export const projects = [
     type: 'Android',
   },
   {
+    title: 'Wizard Companion',
+    description: 'This is currently in the Play Store! Wizard Companion is a project that I built to mainly get a feel for Jetpack Compose, and I love it! This app is a companion app for the Wizard card game that my family and I play quite often.  It simplifies scoring, doing all of the hard work for you.  It also uses a Room database to store all of your previous games so you have a history of all past games.  It also supports light and dark mode.',
+    imageName: 'wizard-companion.png',
+    link: 'https://github.com/reid112/WizardCompanion-Android',
+    type: 'Android',
+  },
+  {
     title: 'Portfolio',
     description: 'This is the website that you are currently on, my portfolio.  I built this website from scratch using vue 3, vite, and tailwind.',
     imageName: 'portfolio.png',
